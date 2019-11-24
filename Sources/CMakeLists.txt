@@ -1,9 +1,4 @@
-
-
-
-
-
-list(APPEND include_dirs ${CMAKE_CURRENT_SOURCE_DIR} ${third_party_INCLUDE_DIRS})
+list(APPEND include_dirs ${CMAKE_CURRENT_SOURCE_DIR} ${lumiere_third_party_INCLUDE_DIRS})
 
 list(APPEND sub_dirs Common Container Exception FileSystem Image Input Logging Math Script Serializer Streaming Time)
 foreach(sub_dir ${sub_dirs})
