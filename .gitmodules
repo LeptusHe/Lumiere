@@ -13,3 +13,10 @@
 [submodule "ThirdParty/glm"]
 	path = ThirdParty/glm
 	url = https://github.com/g-truc/glm.git
+[submodule "ThirdParty/lua"]
+	path = ThirdParty/lua
+	url = https://github.com/lua/lua.git
+	branch = v5.3
+[submodule "ThirdParty/sol2"]
+	path = ThirdParty/sol2
+	url = https://github.com/ThePhD/sol2.git
