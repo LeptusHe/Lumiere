@@ -15,6 +15,8 @@ using Vector4f = glm::vec4;
 using Matrix3x3 = glm::mat3;
 using Matrix4x4 = glm::mat4;
 
+using Point2i = glm::ivec2;
+using Point2f = glm::vec2;
 using Point3f = glm::vec3;
 using Position = glm::vec3;
 using Normal3f = glm::vec3;
