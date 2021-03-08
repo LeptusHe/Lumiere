@@ -1,4 +1,5 @@
 set(better_enum_INCLUDE_DIRS ${CMAKE_CURRENT_SOURCE_DIR})
+set(entityx_INCLUDE_DIRS ${CMAKE_CURRENT_SOURCE_DIR})
 set(fmt_INCLUDE_DIRS ${CMAKE_CURRENT_SOURCE_DIR}/fmt/include)
 set(glfw_INCLUDE_DIRS ${CMAKE_CURRENT_SOURCE_DIR}/glfw/include)
 set(glm_INCLUDE_DIRS ${CMAKE_CURRENT_SOURCE_DIR}/glm)
@@ -8,6 +9,7 @@ set(stb_INCLUDE_DIRS ${CMAKE_CURRENT_SOURCE_DIR}/stb)
 
 set(INCLUDE_DIRS
         ${better_enum_INCLUDE_DIRS}
+        ${entityx_INCLUDE_DIRS}
         ${fmt_INCLUDE_DIRS}
         ${glfw_INCLUDE_DIRS}
         ${glm_INCLUDE_DIRS}

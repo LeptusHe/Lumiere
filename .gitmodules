@@ -20,3 +20,6 @@
 [submodule "ThirdParty/sol2"]
 	path = ThirdParty/sol2
 	url = https://github.com/ThePhD/sol2.git
+[submodule "ThirdParty/entityx"]
+	path = ThirdParty/entityx
+	url = https://github.com/alecthomas/entityx.git
