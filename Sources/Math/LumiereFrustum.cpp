@@ -184,13 +184,13 @@ void Frustum::updateViewMatrix()
     mFrontDir = Normalize(mFrontDir);
     mRightDir = Normalize(Cross(mFrontDir, worldUp));
     mUpDir = Normalize(Cross(mRightDir, mFrontDir));
-    mViewMatrix = CalculateViewMatrix(mPosition, mPosition + mFrontDir, mUpDir);
+    //mViewMatrix = CalculateViewMatrix(mPosition, mPosition + mFrontDir, mUpDir);
 }
 
 
 void Frustum::updateProjectionMatrix()
 {
-    mProjectionMatrix = CalculateProjectionMatrix(mFOVy, mAspectRatio, mNearClipDistance, mFarClipDistance);
+    //mProjectionMatrix = CalculateProjectionMatrix(mFOVy, mAspectRatio, mNearClipDistance, mFarClipDistance);
 }
 
 
@@ -216,6 +216,7 @@ void Frustum::updateFrustumPlaneList()
 
     Plane planeList[FrustumPlane::_size()];
 
+    /*
     planeList[FrustumPlane::NearPlane] = Plane(mFrontDir, nearPlaneCenter);
     planeList[FrustumPlane::FarPlane] = Plane(-mFrontDir, farPlaneCenter);
 
@@ -239,7 +240,7 @@ void Frustum::updateFrustumPlaneList()
     tmpVector = Normalize(tmpVector);
     Normal3f bottomPlaneNormal = Normalize(Cross(mRightDir, tmpVector));
     planeList[FrustumPlane::BottomPlane] = Plane(bottomPlaneNormal, nearPlaneBottomLeft);
-
+    */
     for (const auto& plane : planeList) {
         mFrustumPlaneList.push_back(plane);
     }
