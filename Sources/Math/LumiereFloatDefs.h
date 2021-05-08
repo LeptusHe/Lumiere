@@ -52,7 +52,7 @@ inline LUMIERE_HOST_DEVICE typename std::enable_if_t<std::is_floating_point<T>::
 }
 
 template <typename T>
-inline LUMIERE_HOST_DEVICE typename  std::enable_if_t<std::is_integral<T>::value, bool> IsNan(T v)
+inline LUMIERE_HOST_DEVICE typename std::enable_if_t<std::is_integral<T>::value, bool> IsNaN(T v)
 {
     return false;
 }
