@@ -29,6 +29,8 @@ using Normal3f = glm::vec3;
 using Matrix3x3 = glm::mat3;
 using Matrix4x4 = glm::mat4;
 
+using Transform = glm::mat4;
+
 #endif
 
 
