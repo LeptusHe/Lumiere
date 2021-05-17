@@ -1,5 +1,5 @@
 #include "LumiereException.h"
-#include <fmt/format.h>
+#include <cassert>
 
 BEGIN_LUMIERE_NAMESPACE
 

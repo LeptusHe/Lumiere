@@ -12,7 +12,7 @@ struct Offset2D {
     T x = static_cast<T>(0);
     T y = static_cast<T>(0);
 
-    static_assert(std::is_integral<T>::value || std::is_floating_point<T>::value);
+    static_assert(std::is_integral<T>::value || std::is_floating_point<T>::value, "invalid type");
 };
 
 
@@ -24,7 +24,7 @@ struct Extent2D {
     T x = static_cast<T>(0);
     T y = static_cast<T>(0);
 
-    static_assert(std::is_integral<T>::value || std::is_floating_point<T>::value);
+    static_assert(std::is_integral<T>::value || std::is_floating_point<T>::value, "invalid type");
 };
 
 
